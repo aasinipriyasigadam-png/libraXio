@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Library Book Search</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Library Book Search</h1>
+    <p class="sub">Search our collection by title, author, or ISBN</p>
+  </header>
+
+  <main class="container">
+    <section class="search-area">
+      <label for="search" class="visually-hidden">Search books</label>
+      <input id="search" type="search" placeholder="Search title, author or ISBN..." autofocus />
+      <div id="results-info" class="results-info" aria-live="polite"></div>
+    </section>
+
+    <section id="results" class="results" aria-live="polite">
+      <!-- JS will render book cards here -->
+    </section>
+  </main>
+
+  <!-- Book details modal/panel -->
+  <aside id="detailPanel" class="detail-panel" aria-hidden="true">
+    <button id="closeDetail" class="close-btn" aria-label="Close details">&times;</button>
+    <div id="detailContent"></div>
+  </aside>
+
+  <footer class="footer">
+    <small>Example demo — replace the sample dataset in script.js with your real data.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
